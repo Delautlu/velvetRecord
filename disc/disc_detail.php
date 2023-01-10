@@ -79,7 +79,7 @@
 
         <a href="disc_form.php?id=<?= $myArtist->disc_id?>"class="btn btn-primary">Modifier</a>
         <a href="script_disc_delete.php?id=<?= $myArtist->disc_id?>" id="suppr"><button class="btn btn-primary">Supprimer</button></a>
-        <a href="discs.php?id=<?= $myArtist->disc_id?>"class="btn btn-primary">Retour</a>
+        <a href="discs.php?id=<?= $myArtist->disc_id?>"button class="btn btn-primary">Retour</button></a>
 
     
 

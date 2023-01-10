@@ -46,7 +46,7 @@ $total = $compte['total'];
                     <p class="text-right">Label : <?= $disc->disc_label ?>
                     <p class="text-right">Year : <?= $disc->disc_year ?>
                     <p class="text-right">Genre :<?= $disc->disc_genre ?>
-                    <p class="text-right"><a href="disc_detail.php?id=<?= $disc->disc_id ?>" class="btn btn-primary stretched-link">Détails</a>
+                    <p class="text-right"><a href="disc_detail.php?id=<?= $disc->disc_id ?>" class="btn btn-primary">Détails</a>
                     </div>
             </div>
                 
@@ -54,21 +54,6 @@ $total = $compte['total'];
         <?php endforeach; ?>
     </div>
 </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

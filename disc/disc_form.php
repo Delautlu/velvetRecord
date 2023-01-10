@@ -24,17 +24,17 @@
 <body>
 
 <h1>Modifier un vinyle</h1>
-
+<div class="container form-group">
 <form action ="script_disc_form.php" method="post">
 
 <input type="hidden" name="id" value="<?= $myArtist->disc_id ?>">
 
 <label for="titre">Title</label><br>
-<input type="text" name="title" id="titre" value="<?= $myArtist->disc_title ?>">
+<input type="text" class="form-control" name="title" id="titre" value="<?= $myArtist->disc_title ?>">
 <br><br>
 
 <label for="nom">Artist</label><br>
-    <select id="nom" name="artist_name">
+    <select id="nom" name="artist_name"class="form-control" >
         <option value="select">Veuillez sélectionner un artiste</option>
         <?php foreach ($choixart as $choix): ?>
             <option value=<?=$choix->artist_id?> ><?= $choix->artist_name ?></option>
@@ -43,29 +43,31 @@
 <br><br>
 
 <label for="annee">Year</label><br>
-<input type="text" name="annees" id="annee" value="<?= $myArtist->disc_year ?>">
+<input type="text" class="form-control" name="annees" id="annee" value="<?= $myArtist->disc_year ?>">
 <br><br>
 
 <label for="cat">Genre</label><br>
-<input type="text" name="genres" id="cat" value="<?= $myArtist->disc_genre ?>">
+<input type="text" class="form-control"  name="genres" id="cat" value="<?= $myArtist->disc_genre ?>">
 <br><br>
 
 <label for="label">Label</label><br>
-<input type="text" name="labels" id="label" value="<?= $myArtist->disc_label?>">
+<input type="text" class="form-control"  name="labels" id="label" value="<?= $myArtist->disc_label?>">
 <br><br>
 
 <label for="prix">Price</label><br>
-<input type="text" name="price" id="prix" value="<?= $myArtist->disc_price?>">
+<input type="text" class="form-control" name="price" id="prix" value="<?= $myArtist->disc_price?>">
 <br><br>
 
 <label for="disc_picture">Picture :</label><br>
-<input type="file" name="img" id="img_disc"><br>
-<img src="assets/img/<?= $myArtist->disc_picture ?>" alt="<?= $myArtist->disc_picture?>"><br><br>
+<input type="file" class="form-control"  name="img" id="img_disc"><br>
+<img src="assets/img/<?= $myArtist->disc_picture ?>" alt="<?= $myArtist->disc_picture?>" width="50%">
+<br><br>
 
 <a href="script_disc_form.php" class="btn btn-primary">Modifier</a>
 <a href="discs.php" class="btn btn-primary">Retour</a>
 
 </form>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
