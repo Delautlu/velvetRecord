@@ -34,12 +34,13 @@ $total = $compte['total'];
     </td>
    
 <div class="container-fluid">
-        <h2><p class="font-weight-bold">Liste des disques (<?= $total ?>)</p></h2>    
+
+        <h2><p class="font-weight-bold">Liste des disques (<?= $total ?>)</p></h2>  
     <div class="row">
         <?php foreach ($tableau as $disc): ?>
-        <div class="card col-5 m-4" style="width:18rem;"id="card">
+        <div class="card col-lg-5 col-12 m-4" style="width:18rem;"id="card">
             <div class="row">
-                <img src="assets/img/<?= $disc->disc_picture ?>" style="max-width:100%;height:auto"  class="card-img-top col-6" id="imgcard" alt="mage">
+                <img src="assets/img/<?= $disc->disc_picture ?>" style="max-width:100%;height:auto"  class="card-img-top col-6 w-25 h-100" id="imgcard" alt="mage">
                     <div class="card-body col-6">
                     <p class="text-right font-weight-bold"><?= $disc->disc_title ?>
                     <p class="text-right font-weight-bold"><?= $disc->artist_name ?>
