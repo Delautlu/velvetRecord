@@ -75,7 +75,7 @@
         </div>
     </div>
         Picture<br>
-        <img src="assets/img/<?= $myArtist->disc_picture ?>" alt="<?= $myArtist->disc_picture?>"><br><br>
+        <img src="assets/img/<?= $myArtist->disc_picture ?>" alt="<?= $myArtist->disc_picture?>" class="col-lg-5 col-12"><br><br>
 
         <a href="disc_form.php?id=<?= $myArtist->disc_id?>"class="btn btn-primary">Modifier</a>
         <a href="script_disc_delete.php?id=<?= $myArtist->disc_id?>" id="suppr"><button class="btn btn-primary">Supprimer</button></a>
